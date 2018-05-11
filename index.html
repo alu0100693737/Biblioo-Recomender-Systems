@@ -1,0 +1,24 @@
+<head>
+    <!-- * Related Content Styles -->
+    <link rel="stylesheet" type="text/css" href="bower_components/bibblio-related-content-module/css/bib-related-content.css">
+</head>
+
+<!-- * Related Content HTML -->
+<!-- Provide an enclosing element with an id. Position and size it as you wish. -->
+<div id="bib_related-content"> <!-- This is where recommendations will appear. --></div>
+
+<!-- * Related Content Javascript -->
+<script src="bower_components/bibblio-related-content-module/js/bib-related-content.js"></script>
+
+<!-- * Initialise the related content module. -->
+<script>
+    (function() {
+        Bibblio.initRelatedContent({
+            targetElementId: 'bib_related-content',
+            recommendationKey: 'YOUR_RECOMMENDATION_KEY', // Replace this.
+            customUniqueIdentifier: 'YOUR_CUSTOM_UNIQUE_IDENTIFIER', // Replace this.
+            autoIngestion: true, 
+            styleClasses: "bib--hover bib--row-3"
+        });
+    })();
+</script>
